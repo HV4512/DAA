@@ -18,16 +18,16 @@ int binarysearch(int k, int arr[], int low, int high)
 }
 void sort(int a[], int n)
 {
-    int i, j, temp;
+    int i, j, flag;
     for (i = 0; i < n; i++)
     {
         for (j = i + 1; j < n; j++)
         {
             if (a[i] > a[j])
             {
-                temp = a[i];
+                flag = a[i];
                 a[i] = a[j];
-                a[j] = temp;
+                a[j] = flag;
             }
         }
     }
